@@ -1,3 +1,7 @@
+/*Schrijf een programma dat een positief geheel getal inleest en vervolgens de driehoek van Floyd afdrukt.
+In deze driehoek worden getallen oplopend afgedrukt, beginnend bij 1, steeds één getal meer per rij.
+De maximale invoer is 44,
+dan wordt het getal 999 als hoogste getal afgedrukt.*/
 
 #include <stdio.h>
 #include <math.h>

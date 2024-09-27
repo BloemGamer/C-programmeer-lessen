@@ -1,3 +1,7 @@
+/*Ontwerp een programma dat de gebruiker vraagt om positieve gehele getallen in te voeren met een maxi‐
+mum van 10. Dit programma moet net zo lang getallen inlezen totdat het getal 0 wordt ingevoerd. Hierna
+moet het programma afdrukken hoeveel voldoendes (6⋯10) en hoeveel onvoldoendes (1⋯5) door de ge‐
+bruiker zijn ingevoerd.*/
 
 #include <stdio.h>
 #include <math.h>

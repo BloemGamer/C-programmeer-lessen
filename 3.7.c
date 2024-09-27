@@ -1,3 +1,5 @@
+/*Ontwerp een programma dat aangeeft of een ingevoerd geheel getal veranderd is ten opzichte van het
+vorige ingevoerde getal. Het getal 0 zorgt ervoor dat het programma stopt*/
 
 #include <stdio.h>
 #include <math.h>

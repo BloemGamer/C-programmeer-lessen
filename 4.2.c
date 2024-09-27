@@ -1,3 +1,5 @@
+/*Schrijf een functie die twee argumenten meekrijgt en de vermenigvuldiging van deze twee argumenten
+teruggeeft.*/
 
 #include <stdio.h>
 #include <math.h>

@@ -1,3 +1,5 @@
+/*Schrijf een programma dat het kleinste en één na kleinste getal bepaalt uit een aantal opgegeven gehele
+getallen. De rij wordt afgesloten met het getal 0.*/
 
 #include <stdio.h>
 #include <math.h>

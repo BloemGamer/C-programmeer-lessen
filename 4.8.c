@@ -1,10 +1,16 @@
+/*Ontwerp een programma dat aan de gebruiker een vijftal gehele getallen vraag en het maximum van deze
+getallen afdrukt. Hiervoor moet een aantal functies geschreven en gebruikt worden:
+• max2 function
+• max5 function
+• leesGetal function*/
+
 
 #include <stdio.h>
 #include <math.h>
 
 int max2();
 int max5();
-int leesGetal(); //this one feels unnecessary for this project, but is in the assignment
+int leesGetal();
 
 int main (void)
 {
