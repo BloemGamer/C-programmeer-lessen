@@ -13,7 +13,7 @@ int main (void)
     int i, j;
     double aver;
     
-    for (i = 0; i < amount; i = i + 1)
+    for (i = 0; i < amount; i++)
     {
         do 
         {
