@@ -14,11 +14,8 @@ int main(void)
 {
 
 
-    struct punt p1;
-    struct punt p2;
-    struct punt p3;
-    struct punt p4;
-    struct punt p5;
+    struct punt p1, p2, p3, p4, p5;
+    
 
     printf("Give a x and y coordinate for point 1 to 5\n");
     printf("point 1\n");
