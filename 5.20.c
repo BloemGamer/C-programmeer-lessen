@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
+#include <time.h>
 
-#define queuelength 128
+#define queuelength 128000000
+//+- 88 seconde
 
 void init();
 void put();
@@ -12,16 +14,22 @@ int queue[queuelength] = { 0 };
 
 int main(void)
 {
-    put(2);
-    put(29);
-    put(430);
-    put(4000920);
-    put(9000);
-    put(4);
-    int a = get();
-    int b = get();
-    int c = get();
-
+    clock_t begin = clock();
+    for (int k = 0; k < 100; k++)
+    {
+        put(2);
+        put(29);
+        put(430);
+        put(4000920);
+        put(9000);
+        put(4);
+        int a = get();
+        int b = get();
+        int c = get();
+        printf("%d", k);
+    }
+    clock_t end = clock();
+    printf("\n%lfms", (double)(end - begin));
     for(int i = 0; i < 128; i++)
     {
         printf("%d ", queue[i]);
