@@ -3,12 +3,13 @@
 #include <assert.h>
 #include <time.h>
 
-#define queuelength 128000000
+#define queuelength 224727016
 //13ms
+//224727016
 
 struct queue
 {
-    int start, end;
+    size_t start, end;
     int queue[queuelength];
 };
 struct queue queue;
@@ -21,7 +22,7 @@ int main(void)
 {
     init();
     clock_t begin = clock();
-    for (int k = 0; k < 100; k++)
+    for (size_t k = 0; k < 100; k++)
     {
         put(2);
         put(29);
@@ -32,12 +33,12 @@ int main(void)
         int a = get();
         int b = get();
         int c = get();
-        printf("%d", k);
+        //printf("%d", k);
     }
     clock_t end = clock();
     printf("\n%lfms", (double)(end - begin));
 
-    int j = queue.start;
+    size_t j = queue.start;
     while(j != queue.end)
     {
         printf("%d ", queue.queue[j]);
@@ -69,7 +70,7 @@ void put(int number)
 int get()
 {
     assert(queue.end != queue.start && "queue empty");
-    int number = queue.queue[queue.start];
+    size_t number = queue.queue[queue.start];
     queue.start++;
     if(queue.start == queuelength)
     {
