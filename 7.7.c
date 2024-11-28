@@ -40,7 +40,7 @@ int *make_array(int size)
 	for(int i = 0; i < size; i++)
 	{
 		printf("Give a number\n");
-		scanf("%d", &*(make_arr + i));
+		scanf("%d", (make_arr + i));
 	}
 	return make_arr;
 }
