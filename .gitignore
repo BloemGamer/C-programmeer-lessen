@@ -3,3 +3,4 @@ tasks.json
 .vscode
 test.c
 zooi_in_klas
+*.txt
